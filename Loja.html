@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loja de Monsters</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Loja.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="Loja.html">
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="monster.html">
+                        Monster Energy
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#concientizando">
+                        Conscientização
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#beneficios">
+                        Benefícios
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#comprar">
+                        Comprar
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">
+                        Contato
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<header id="home" class="hero">
+
+    <div class="container text-center">
+
+        <h1>Bem-vindo à Loja Virtual de Monsters</h1>
+
+        <p>Todos os sabores para todos os gostos!</p>
+
+        <a href="monster.html" class="btn btn-success btn-lg mt-3">
+            Conheça nossos Monsters
+        </a>
+
+    </div>
+
+</header>
+
+
+<section class="container my-5 text-center">
+
+    <h2>O que é Monster Energy?</h2>
+
+    <p>
+        Monster Energy é uma marca de bebidas energéticas
+        conhecida por sua identidade visual marcante e
+        variedade de sabores.
+    </p>
+
+</section>
+
+
+<section id="produtos" class="container my-5">
+
+    <h2 class="text-center mb-4">Nossos Produtos</h2>
+
+    <div class="table-responsive">
+
+        <table class="table table-dark table-striped table-bordered text-center">
+
+            <thead>
+                <tr>
+                    <th>Sabor Monster</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Ultra Violet</td>
+                    <td>R$ 8,79</td>
+                    <td>67</td>
+                </tr>
+
+                <tr>
+                    <td>Mango Loko</td>
+                    <td>R$ 8,79</td>
+                    <td>67</td>
+                </tr>
+
+                <tr>
+                    <td>Morango</td>
+                    <td>R$ 8,79</td>
+                    <td>67</td>
+                </tr>
+
+                <tr>
+                    <td>Rio Punch</td>
+                    <td>R$ 8,79</td>
+                    <td>67</td>
+                </tr>
+
+                <tr>
+                    <td>Ultra White</td>
+                    <td>R$ 8,79</td>
+                    <td>67</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<section id="comprar" class="container my-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-12 col-md-8 col-lg-6">
+
+            <div class="card compra-card p-4 shadow">
+
+                <h2 class="text-center mb-4">
+                    Comprar Monster Energy
+                </h2>
+
+                <label for="sabor" class="form-label">
+                    Escolha o sabor:
+                </label>
+
+                <select id="sabor" class="form-select mb-3">
+
+                    <option value="Ultra Violet">Ultra Violet</option>
+                    <option value="Mango Loko">Mango Loko</option>
+                    <option value="Morango">Morango</option>
+                    <option value="Rio Punch">Rio Punch</option>
+                    <option value="Ultra White">Ultra White</option>
+
+                </select>
+
+                <label for="quantidade" class="form-label">
+                    Quantos Monsters deseja comprar?
+                </label>
+
+                <input
+                    type="number"
+                    id="quantidade"
+                    class="form-control mb-3"
+                    min="1"
+                    max="67"
+                    placeholder="Digite a quantidade"
+                >
+
+                <button
+                    type="button"
+                    class="btn btn-success w-100"
+                    onclick="calcularCompra()">
+
+                    Calcular compra
+
+                </button>
+
+                <div id="resultado" class="mt-3"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="concientizando" class="container my-5">
+
+    <h2>Conscientização</h2>
+
+    <p>
+        As bebidas energéticas possuem ingredientes como cafeína,
+        taurina e vitaminas do complexo B.
+
+        É importante conhecer a composição dos produtos,
+        respeitar as recomendações de consumo e lembrar que
+        bebidas energéticas não são indicadas para crianças,
+        gestantes ou pessoas sensíveis à cafeína.
+    </p>
+
+</section>
+
+
+<section id="beneficios" class="container my-5">
+
+    <h2 class="text-center mb-4">Informações sobre os ingredientes</h2>
+
+    <div class="row g-3">
+
+        <div class="col-12 col-md-6">
+            <div class="card p-3 h-100">
+                <h4>Cafeína</h4>
+                <p>
+                    Pode aumentar temporariamente o estado de alerta
+                    e diminuir a sensação de cansaço.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="card p-3 h-100">
+                <h4>Taurina e vitaminas</h4>
+                <p>
+                    Participam de diferentes processos do organismo.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="multimidia" class="container my-5">
+
+    <h2 class="text-center mb-4">Conteúdo Multimídia</h2>
+
+    <div class="ratio ratio-16x9">
+
+        <video controls>
+
+            <source src="Rayssa Legal.mp4" type="video/mp4">
+
+            <track
+                kind="subtitles"
+                srclang="pt-br"
+                src="Rayssa Legal - Copia.vtt"
+                label="Português"
+            >
+
+        </video>
+
+    </div>
+
+</section>
+
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">Sobre os sabores</h2>
+
+    <ol class="list-group list-group-numbered">
+
+        <li class="list-group-item">
+            Ultra Violet: sabor frutado de uva e frutas vermelhas.
+        </li>
+
+        <li class="list-group-item">
+            Mango Loko: sabor doce e intenso de manga.
+        </li>
+
+        <li class="list-group-item">
+            Morango: sabor doce e cremoso de morango.
+        </li>
+
+        <li class="list-group-item">
+            Rio Punch: mistura de frutas vermelhas e tropicais.
+        </li>
+
+        <li class="list-group-item">
+            Ultra White: sabor cítrico e refrescante.
+        </li>
+
+    </ol>
+
+</section>
+
+
+<section id="contato" class="container my-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-12 col-md-8 col-lg-6">
+
+            <div class="card compra-card p-4">
+
+                <h2 class="text-center mb-4">Entre em contato</h2>
+
+                <form id="formContato">
+
+                    <label for="nome" class="form-label">Nome:</label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        class="form-control mb-3"
+                        required
+                    >
+
+                    <label for="email" class="form-label">E-mail:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        class="form-control mb-3"
+                        required
+                    >
+
+                    <label for="mensagem" class="form-label">
+                        Mensagem:
+                    </label>
+
+                    <textarea
+                        id="mensagem"
+                        class="form-control mb-3"
+                        rows="4"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn btn-success w-100">
+                        Enviar
+                    </button>
+
+                </form>
+
+                <div id="retornoContato" class="mt-3"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="text-center p-4">
+
+    <h3>Sobre o projeto</h3>
+
+    <p>
+        Projeto acadêmico desenvolvido para apresentar
+        a loja virtual de bebidas Monster Energy.
+    </p>
+
+    <p>Desenvolvido por Geovane Lucas | 2026</p>
+
+    <p>
+        <a href="https://www.instagram.com/geovane__mendes/"
+           target="_blank" rel="noopener noreferrer">
+            Instagram
+        </a>
+    </p>
+
+    <p>
+        &copy; 2026 Monster Energy ES - Todos os direitos reservados.
+    </p>
+
+</footer>
+
+
+
+<script>
+
+
+const produtos = {
+    "Ultra Violet": { preco: 8.79, estoque: 67 },
+    "Mango Loko": { preco: 8.79, estoque: 67 },
+    "Morango": { preco: 8.79, estoque: 67 },
+    "Rio Punch": { preco: 8.79, estoque: 67 },
+    "Ultra White": { preco: 8.79, estoque: 67 }
+};
+
+
+
+const parametros = new URLSearchParams(window.location.search);
+const produtoSelecionado = parametros.get("produto");
+
+if (produtos[produtoSelecionado]) {
+    document.getElementById("sabor").value = produtoSelecionado;
+}
+
+
+
+function calcularCompra() {
+
+    const sabor = document.getElementById("sabor").value;
+
+    const quantidade = Number(
+        document.getElementById("quantidade").value
+    );
+
+    const resultado = document.getElementById("resultado");
+
+    const produto = produtos[sabor];
+
+    if (!Number.isInteger(quantidade) || quantidade <= 0) {
+
+        alert("Digite uma quantidade válida!");
+
+        resultado.innerHTML = "";
+
+        return;
+    }
+
+    if (quantidade > produto.estoque) {
+
+        alert("Temos apenas " + produto.estoque +
+              " unidades disponíveis!");
+
+        resultado.innerHTML = "";
+
+        return;
+    }
+
+    const total = quantidade * produto.preco;
+
+    const precoFormatado = produto.preco.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    });
+
+    const totalFormatado = total.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    });
+
+    resultado.innerHTML = `
+        <div class="alert alert-success">
+
+            <h4>Resumo da compra</h4>
+
+            <p>Sabor: ${sabor}</p>
+
+            <p>Quantidade: ${quantidade}</p>
+
+            <p>Preço unitário: ${precoFormatado}</p>
+
+            <hr>
+
+            <h4>Total a pagar: ${totalFormatado}</h4>
+
+            <p>Compra calculada com sucesso!</p>
+
+        </div>
+    `;
+
+}
+
+
+
+document.getElementById("formContato").addEventListener(
+    "submit",
+    function(event) {
+
+        event.preventDefault();
+
+        const nome = document.getElementById("nome").value;
+
+        document.getElementById("retornoContato").innerHTML = `
+            <div class="alert alert-success">
+                Obrigado pelo contato, ${nome}!
+                Sua mensagem foi recebida nesta simulação.
+            </div>
+        `;
+
+        this.reset();
+
+    }
+);
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

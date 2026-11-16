@@ -1,0 +1,281 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: #000;
+    background-image: url("Logo monster.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    background-color: #000 !important;
+    border-bottom: 2px solid #198754;
+}
+
+.navbar-brand {
+    color: #20c997 !important;
+}
+
+.nav-link {
+    color: white !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #20c997 !important;
+}
+
+
+.hero {
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("Logo monster.jpg") center/cover no-repeat;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero p {
+    font-size: 20px;
+    color: white;
+}
+
+
+section {
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    scroll-margin-top: 65px;
+}
+
+section h2 {
+    color: #20c997;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+
+.table-responsive {
+    border-radius: 8px;
+}
+
+.table {
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+
+.card {
+    background-color: #151515;
+    color: white;
+    border: 1px solid #198754;
+    border-radius: 12px;
+}
+
+
+.compra-card {
+    text-align: left;
+}
+
+.compra-card h2 {
+    text-align: center;
+}
+
+.compra-card label {
+    color: white;
+}
+
+.compra-card input,
+.compra-card select,
+.compra-card textarea {
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+}
+
+.compra-card input::placeholder,
+.compra-card textarea::placeholder {
+    color: #aaa;
+}
+
+.compra-card select option {
+    background-color: #222;
+    color: white;
+}
+
+#resultado {
+    line-height: 1.7;
+}
+
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover {
+    background-color: #126b40;
+    border-color: #126b40;
+}
+
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #000;
+}
+
+
+.list-group-item {
+    background-color: #151515;
+    color: white;
+    border-color: #444;
+    text-align: left;
+}
+
+
+header:not(.hero) {
+    background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("Logo monster.jpg") center/cover no-repeat;
+}
+
+.produto {
+    background-color: #151515;
+    color: white;
+    border: 1px solid #198754;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(25,135,84,0.4);
+}
+
+.produto img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    padding: 15px;
+    background-color: white;
+}
+
+.produto .card-title {
+    color: #20c997;
+    font-weight: bold;
+}
+
+.produto .card-text {
+    color: white;
+}
+
+.preco {
+    color: #20c997;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #000;
+    color: white;
+    border-top: 2px solid #198754;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #20c997;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+@media (max-width: 991px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .hero {
+        min-height: 85vh;
+        padding: 80px 15px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 40px 12px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+    .produto img {
+        height: 230px;
+    }
+
+    footer {
+        font-size: 13px;
+        padding: 20px 10px;
+    }
+
+}
